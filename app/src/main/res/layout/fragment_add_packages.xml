@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.packages.editPackagesOptions.AddPackagesFragment">
+
+
+    <EditText
+        android:id="@+id/addPackageCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Package Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/addPackageOfficeCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Office Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addPackageCode"
+        >
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/addPackageTourCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tour Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addPackageOfficeCode"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addPackageDepartureDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Departure Date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addPackageTourCode"
+
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addPackageCost"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Package Cost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addPackageDepartureDate"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/addPackageSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="24dp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="214dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addPackageCost"
+
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

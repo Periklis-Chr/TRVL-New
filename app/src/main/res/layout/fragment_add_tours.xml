@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.tours.editToursOptions.AddToursFragment">
+
+
+    <EditText
+        android:id="@+id/addTourCode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tour Code"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </EditText>
+
+
+
+    <EditText
+        android:id="@+id/addTourCity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tour City"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addTourCode"
+        >
+    </EditText>
+
+
+    <EditText
+        android:id="@+id/addTourCountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tour Country"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addTourCity"
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addTourDuration"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tour Duration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addTourCountry"
+
+        >
+    </EditText>
+
+    <EditText
+        android:id="@+id/addTourType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:hint="Tour Type"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addTourDuration"
+        >
+    </EditText>
+
+    <Button
+        android:id="@+id/addTourSubmitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:layout_marginTop="24dp"
+        tools:layout_editor_absoluteX="167dp"
+        tools:layout_editor_absoluteY="214dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:flow_horizontalBias="0.5"
+        app:layout_constraintTop_toBottomOf="@+id/addTourType"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

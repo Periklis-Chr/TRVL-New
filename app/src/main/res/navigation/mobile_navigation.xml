@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.iee.trvl.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_offices"
+        android:name="com.iee.trvl.ui.offices.OfficesFragment"
+        android:label="@string/menu_offices"
+        tools:layout="@layout/fragment_offices" >
+        <action
+            android:id="@+id/action_nav_offices_to_addOffices"
+            app:destination="@id/addOffices" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_tours"
+        android:name="com.iee.trvl.ui.tours.ToursFragment"
+        android:label="@string/menu_tours"
+        tools:layout="@layout/fragment_tours" >
+        <action
+            android:id="@+id/action_nav_tours_to_addToursFragment"
+            app:destination="@id/addToursFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_packages"
+        android:name="com.iee.trvl.ui.packages.PackagesFragment"
+        android:label="@string/menu_packages"
+        tools:layout="@layout/fragment_packages" >
+        <action
+            android:id="@+id/action_nav_packages_to_addPackagesFragment"
+            app:destination="@id/addPackagesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_costumers"
+        android:name="com.iee.trvl.ui.costumers.CostumersFragment"
+        android:label="@string/menu_costumers"
+        tools:layout="@layout/fragment_costumers" >
+        <action
+            android:id="@+id/action_nav_costumers_to_addCostumersFragment"
+            app:destination="@id/addCostumersFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addOffices"
+        android:name="com.iee.trvl.ui.offices.editOfficesOptions.AddOfficesFragment"
+        android:label="Add Offices"
+        tools:layout="@layout/fragment_add_offices" >
+        <action
+            android:id="@+id/action_addOffices_to_nav_offices"
+            app:destination="@id/nav_offices" />
+    </fragment>
+    <fragment
+        android:id="@+id/addPackagesFragment"
+        android:name="com.iee.trvl.ui.packages.editPackagesOptions.AddPackagesFragment"
+        android:label="Add Travel Packages"
+        tools:layout="@layout/fragment_add_packages" >
+        <action
+            android:id="@+id/action_addPackagesFragment_to_nav_packages"
+            app:destination="@id/nav_packages" />
+    </fragment>
+    <fragment
+        android:id="@+id/addToursFragment"
+        android:name="com.iee.trvl.ui.tours.editToursOptions.AddToursFragment"
+        android:label="Add Tours"
+        tools:layout="@layout/fragment_add_tours" >
+        <action
+            android:id="@+id/action_addToursFragment_to_nav_tours"
+            app:destination="@id/nav_tours" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCostumersFragment"
+        android:name="com.iee.trvl.ui.costumers.editCostumersOptions.AddCostumersFragment"
+        android:label="Add Costumers"
+        tools:layout="@layout/fragment_add_costumers" >
+        <action
+            android:id="@+id/action_addCostumersFragment_to_nav_costumers"
+            app:destination="@id/nav_costumers" />
+    </fragment>
+</navigation>
